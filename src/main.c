@@ -60,7 +60,8 @@ int main(int argc, char *argv[]) {
 
     switch (op) {
     case OP_ADD: {
-      uint16_t r0 = (instr >> 9) & 0x7;
+        // as register mode(using registers to pass around values) and immediate mode(using values directly ) both are supported
+      uint16_t r0 = (instr >> 9) & 0x7; 
       break;
     }
 
